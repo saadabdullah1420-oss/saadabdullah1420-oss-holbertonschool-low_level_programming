@@ -10,7 +10,7 @@ int main(void)
 	int choice;
 	int a;
 	int b;
-	int result;
+	float result;
 
 	while (1)
 	{
@@ -38,7 +38,7 @@ int main(void)
 			scanf("%d", &b);
 
 			result = a + b;
-			printf("Result: %d\n", result);
+			printf("Result: %.0f\n", result);
 		}
 		else if (choice == 2)
 		{
@@ -49,7 +49,7 @@ int main(void)
 			scanf("%d", &b);
 
 			result = a - b;
-			printf("Result: %d\n", result);
+			printf("Result: %.0f\n", result);
 		}
 		else if (choice == 3)
 		{
@@ -60,9 +60,27 @@ int main(void)
 			scanf("%d", &b);
 
 			result = a * b;
-			printf("Result: %d\n", result);
+			printf("Result: %.0f\n", result);
 		}
-		else if (choice < 1 || choice > 4)
+		else if (choice == 4)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+
+			printf("B: ");
+			scanf("%d", &b);
+
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+			}
+			else
+			{
+				result = (float)a / b;
+				printf("Result: %.1f\n", result);
+			}
+		}
+		else
 		{
 			printf("Invalid choice\n");
 		}
