@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - simple calculator menu loop
+ * main - simple calculator
  *
  * Return: Always 0
  */
 int main(void)
 {
 	int choice;
+	int a;
+	int b;
+	int result;
 
 	while (1)
 	{
@@ -25,6 +28,28 @@ int main(void)
 		{
 			printf("Bye!\n");
 			break;
+		}
+		else if (choice == 1)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+
+			printf("B: ");
+			scanf("%d", &b);
+
+			result = a + b;
+			printf("Result: %d\n", result);
+		}
+		else if (choice == 2)
+		{
+			printf("A: ");
+			scanf("%d", &a);
+
+			printf("B: ");
+			scanf("%d", &b);
+
+			result = a - b;
+			printf("Result: %d\n", result);
 		}
 		else if (choice < 1 || choice > 4)
 		{
