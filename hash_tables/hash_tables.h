@@ -3,6 +3,8 @@
 
 #include <stddef.h>
 
+unsigned long int hash_djb2(const unsigned char *str);
+
 /**
  * struct hash_node_s - Node of a hash table
  *
