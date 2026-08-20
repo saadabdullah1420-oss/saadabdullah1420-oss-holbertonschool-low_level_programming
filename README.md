@@ -1,1 +1,3 @@
-# holbertonschool-low_level_programming
+# Recursion
+
+This directory contains recursive functions written in C.
